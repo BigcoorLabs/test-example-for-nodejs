@@ -1,0 +1,19 @@
+{
+    "id": "example.json",
+    "type": "object",
+    "properties": {
+        "asArray": {
+            "type": "array",
+            "items": {
+                "$ref": "example-object.json"
+            }
+        },
+        "asObject": {
+            "$ref": "example-object.json"
+        },
+        "asString": "string",
+        "asNumber": "number",
+        "asBoolean": "boolean"
+    },
+    "required": ["asArray", "asObject", "asNumber"]
+}

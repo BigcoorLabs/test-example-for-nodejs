@@ -1,0 +1,5 @@
+{
+    "uri": "/example",
+    "method": "GET",
+    "schema": "example.json"
+}

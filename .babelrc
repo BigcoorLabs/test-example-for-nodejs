@@ -1,0 +1,8 @@
+{
+    "presets": ["es2015","es2015-native-generators"],
+    "plugins": [
+        "syntax-async-functions", 
+        "transform-async-to-generator"
+    ],
+    "sourceMaps": "inline"
+}
