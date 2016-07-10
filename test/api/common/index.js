@@ -21,7 +21,7 @@ readdirSync(schemaDirName).forEach((fileName) => {
     ajv.addSchema(require('../schemas/' + fileName), fileName);
 });
 
-const baseUrl = 'http://localhost:3000';
+const baseUrl = 'https://test-example-code.herokuapp.com';
 
 const jar = request.jar(); // shared cookie jar
 
