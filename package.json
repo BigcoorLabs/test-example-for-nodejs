@@ -5,7 +5,8 @@
   "author": "xuqifeng",
   "main": "server.js",
   "scripts": {
-    "test": "node server && grunt test"
+    "test": "node server && mocha index.js",
+    "start": "node server"
   },
   "dependencies": {
     "ajv": "^4.1.5",

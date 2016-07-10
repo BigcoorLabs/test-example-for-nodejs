@@ -41,26 +41,29 @@ app.use(morgan(morganLogStyle, {
   stream: logStream
 }));
 
-app.get('/test', (req, res) => {
+app.get('/example', (req, res) => {
   res.json({
-    asArray: [
-      {
-        first: 'first1',
-        second: 'second1'
+    code: 200,
+    result: {
+      asArray: [
+        {
+          first: 'first1',
+          second: 'second1'
+        },
+        {
+          first: 'first2',
+          second: 'second2'
+        }
+      ],
+      asObject: {
+        first: 'first',
+        second: 'second'
       },
-      {
-        first: 'first2',
-        second: 'second2'
-      }
-    ],
-    asObject: {
-      first: 'first',
-      second: 'second'
-    },
-    asString: 'This is a string.',
-    asNumber: 1,
-    asBoolean: true
-  });
+      asString: 'This is a string.',
+      asNumber: 1,
+      asBoolean: true
+    }
+  })
 });
 
 function closeHandler() {
