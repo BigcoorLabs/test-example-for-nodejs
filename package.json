@@ -8,7 +8,7 @@
     "node": "6.2.2"
   },
   "scripts": {
-    "test": "node server && mocha index.js",
+    "test": "mocha index.js",
     "start": "node server.js"
   },
   "dependencies": {
