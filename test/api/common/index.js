@@ -37,7 +37,7 @@ export function req(requestFile, opt) {
     let requestObject = require('../requests' + requestFile);
     requestObject = _.clone(requestObject);
     requestObject.uri = baseUrl + requestObject.uri;
-    console.log(`    ${requestObject.method}: ${requestObject.uri}`);
+    console.log(`${requestObject.method}: ${requestObject.uri}`);
     requestObject.json = true;
     if (opt && opt.jar) {
         requestObject.jar = opt.jar;
