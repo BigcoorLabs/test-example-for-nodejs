@@ -11,9 +11,9 @@
         "asObject": {
             "$ref": "example-object.json"
         },
-        "asString": "string",
-        "asNumber": "number",
-        "asBoolean": "boolean"
+        "asString": {"type": "string"},
+        "asNumber": {"type": "number"},
+        "asBoolean": {"type": "boolean"}
     },
     "required": ["asArray", "asObject", "asNumber"]
 }

@@ -1,4 +1,4 @@
-export {test, req} from '../../common';
+let {test, req} = require('../../common');
 
 describe("Example Interface", () => {
     it('Provide example', () => test('/example/example.json'));

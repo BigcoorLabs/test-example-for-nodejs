@@ -2,7 +2,7 @@
   "id": "example-object.json",
   "type": "object",
   "properties": {
-    "first": "string",
-    "second": "string"
+    "first": {"type": "string"},
+    "second": {"type": "string"}
     }
 }

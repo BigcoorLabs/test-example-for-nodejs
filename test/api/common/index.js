@@ -1,14 +1,14 @@
-import {readFileSync, readdirSync} from 'fs';
-import * as rp from 'request-promise';
-import * as request from 'request'; 
-import * as assert from 'assert';
-import * as Ajv from 'ajv';
-import * as path from 'path';
-import * as _ from 'lodash';
+const {readFileSync, readdirSync} = require('fs');
+const rp = require('request-promise');
+const request = require('request'); 
+const assert = require('assert');
+const Ajv = require('ajv');
+const path = require('path');
+const _ = require('lodash');
 
 const schemaDirName = path.join(__dirname, '../schemas');
 
-const ajv = new Ajv({
+const ajv = Ajv({
     // check all rules collecting all errors instead of returning after the first error.
     allErrors: true,
     // if the reference cannot be resolved during compilation the exception is thrown
@@ -33,7 +33,7 @@ const jar = request.jar(); // shared cookie jar
  * 3. Set $request.json to true 
  * 4. Call request-promise
  */
-export function req(requestFile, opt) {
+function req(requestFile, opt) {
     let requestObject = require('../requests' + requestFile);
     requestObject = _.clone(requestObject);
     requestObject.uri = baseUrl + requestObject.uri;
@@ -59,7 +59,7 @@ export function req(requestFile, opt) {
  * 5. Assert $response.code === 200
  * 6. Validate $response.result based on target schema
  */
-export function test(requestFile, opt) {
+function test(requestFile, opt) {
     return req(requestFile, opt).then((res) => {
         assert.strictEqual(res.code, 200);
         const requestObject = require('../requests' + requestFile);
@@ -72,4 +72,9 @@ export function test(requestFile, opt) {
             throw ajv.errorsText();
         }
     });
+}
+
+module.exports = {
+    req,
+    test
 }
