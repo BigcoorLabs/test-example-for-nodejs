@@ -24,7 +24,7 @@ app.use(bodyParser.json());
  */
 
 let server = http.createServer(app);
-server.listen(3000);
+server.listen(process.env.PORT || 3000);
 server.on('listening', function () {
   console.log('Server listening on http://localhost:%d', this.address().port);
 });
