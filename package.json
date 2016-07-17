@@ -8,9 +8,8 @@
     "node": "6.2.2"
   },
   "scripts": {
-    "test": "mocha ./test/api/index.js",
-    "start": "node server.js",
-    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    "test": "istanbul cover mocha ./test/api/index.js --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "start": "node server.js"
   },
   "dependencies": {
     "ajv": "^4.1.5",
