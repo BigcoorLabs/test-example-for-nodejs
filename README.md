@@ -5,6 +5,6 @@
 ## technology stack：
 
 - [express](http://www.expressjs.com.cn/4x/api.html)
-- [ES2015]()
-- [avj]()
-- [babel 6]()
+- [ES2015 && babel6](https://babeljs.io/docs/learn-es2015/)
+- [ajv](https://github.com/epoberezkin/ajv)
+- [Json Schema](https://spacetelescope.github.io/understanding-json-schema/)
