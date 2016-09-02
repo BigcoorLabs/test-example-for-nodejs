@@ -18,4 +18,3 @@ include(stdio.h"
 
 - [Understanding JSON Schema](https://spacetelescope.github.io/understanding-json-schema/)
 - [Ignoring code for coverage purposes](https://github.com/gotwarlost/istanbul/blob/master/ignoring-code-for-coverage.md)
--
