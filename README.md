@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/BigcoorLabs/test-example-for-nodejs.svg?branch=master)](https://travis-ci.org/bigcoorDev/test-example-for-nodejs)
 [![Coverage Status](https://coveralls.io/repos/github/bigcoorDev/test-example-for-nodejs/badge.svg)](https://coveralls.io/github/bigcoorDev/test-example-for-nodejs)
 # test-example-for-nodejs
-include(stdio.h"
+始于测试，不止于探索。
 
 ## technology stack：
 
