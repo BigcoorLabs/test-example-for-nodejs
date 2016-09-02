@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/BigcoorLabs/test-example-for-nodejs.svg?branch=master)](https://travis-ci.org/bigcoorDev/test-example-for-nodejs)
 [![Coverage Status](https://coveralls.io/repos/github/bigcoorDev/test-example-for-nodejs/badge.svg)](https://coveralls.io/github/bigcoorDev/test-example-for-nodejs)
 # test-example-for-nodejs
-工程中持续集成小例子
+include(stdio.h"
 
 ## technology stack：
 
@@ -13,3 +13,9 @@
 - [coveralls](https://github.com/nickmerwin/node-coveralls)
 - [heroku](https://www.heroku.com/)
 - [istanbul](https://github.com/gotwarlost/istanbul)
+
+## Ref
+
+- [Understanding JSON Schema](https://spacetelescope.github.io/understanding-json-schema/)
+- [Ignoring code for coverage purposes](https://github.com/gotwarlost/istanbul/blob/master/ignoring-code-for-coverage.md)
+-
