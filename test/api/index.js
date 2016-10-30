@@ -1,4 +1,5 @@
 (function () {
+    throw new Error('Test ci faild');
     //Note: run given test module
     if (process.env.MODULE) {
         require(`./tests/${process.env.MODULE}`);
